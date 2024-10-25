@@ -12,7 +12,7 @@ output_folder.mkdir(parents=True, exist_ok=True)
 
 # Parcourir tous les fichiers audio dans le dossier 'fichier_audio'
 for file_path in input_folder.iterdir():
-    if file_path.suffix in ['.mp3', '.wav']:  # Assurez-vous de traiter uniquement les fichiers audio
+    if file_path.suffix in ['.mp3', '.wav']:  # traiter uniquement les fichiers audio
         # Charger le fichier audio
         audio, sr = librosa.load(file_path)
         
