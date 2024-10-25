@@ -1,0 +1,7 @@
+# Ignorer les dossiers de librairies installées
+__pycache__/
+*.py[cod]
+*.egg-info/
+env/
+venv/
+.venv/
