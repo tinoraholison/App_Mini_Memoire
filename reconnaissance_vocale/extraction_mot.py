@@ -4,7 +4,7 @@ import soundfile as sf
 from pathlib import Path
 
 # Dossier contenant les fichiers audio à segmenter
-input_folder = Path('fichier_audio')
+input_folder = Path('reconnaissance_vocale/fichier_audio')
 
 # Créer le sous-dossier 'fichier_audio_par_mot' pour stocker les segments
 output_folder = input_folder / 'fichier_audio_par_mot'
@@ -43,7 +43,7 @@ for file_path in input_folder.iterdir():
             
             # Créer un nom de fichier basé sur le fichier original et l'index du segment
             base_filename = file_path.stem  # Nom sans extension
-            output_file = output_folder / f'{base_filename}_mot_{i}.wav'
+            output_file = output_folder / f'{base_filename}_{i}.wav'
             
             # Sauvegarder le segment dans le sous-dossier
             sf.write(output_file, word_audio, sr)
