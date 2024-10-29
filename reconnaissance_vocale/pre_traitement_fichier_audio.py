@@ -4,10 +4,10 @@ from pathlib import Path
 import os
 
 # Dossier contenant les fichiers audio segmentés
-input_folder = Path('fichier_audio/fichier_audio_par_mot')
+input_folder = Path('reconnaissance_vocale/fichier_audio/fichier_audio_par_mot')
 
 # Dossier pour enregistrer les caractéristiques extraites
-output_features_folder = Path('audio_features')
+output_features_folder = Path('reconnaissance_vocale/audio_features')
 output_features_folder.mkdir(parents=True, exist_ok=True)
 
 # Paramètres de pré-traitement
